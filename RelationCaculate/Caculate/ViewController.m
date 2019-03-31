@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "CalculateMethod.h"
 #import <math.h>
-
+#import "LBBPhotoListVC.h"
 @interface ViewController (){
     long double currentNumber;
     CalculateMethod *calMethod;
@@ -57,7 +57,17 @@
         [self.portraitDisplay setFont:[UIFont systemFontOfSize:20]];
         [self.portraitDisplay setText:@"设置新口令(123456%)"];
         [self.portraitDisplay setTextColor:[UIColor colorWithRed:0.99 green:0.74 blue:0.41 alpha:1.0]];
+        [self performSelector:@selector(showAlert) withObject:nil afterDelay:1];
     }
+}
+
+
+- (void)showAlert{
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"设置口令" message:@"请设置4-8位数字口令，然后按%键" preferredStyle:UIAlertControllerStyleAlert];
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        [alertVC dismissViewControllerAnimated:YES completion:nil];
+    }]];
+    [self presentViewController:alertVC animated:YES completion:nil];
 }
 
 -(void)clickButtons:(UIButton *)btn
@@ -130,6 +140,12 @@
                 [self saveFirstLaunch];
                 [self.portraitDisplay setText:@"0"];
             } else {
+                if ([[self getPassword] isEqualToString:self.portraitDisplay.text]) {
+                    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[LBBPhotoListVC alloc] init]];
+                    [self presentViewController:nav animated:YES completion:nil];
+                    return;
+                }
+                                                   
                 currentNumber=currentNumber*0.01;
                 [self displayString:[NSString stringWithFormat:@"%Lg",currentNumber] withMethod:@"cover"];
                 totalDecimals=(int)self.portraitDisplay.text.length-1;

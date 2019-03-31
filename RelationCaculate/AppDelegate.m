@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
-@interface AppDelegate ()
+#import <BUAdSDK/BUAdSDK.h>
+@interface AppDelegate ()<BUSplashAdDelegate>
 
 @end
 
@@ -16,7 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [BUAdSDKManager setAppID:@"5011077"];
     
+    CGRect frame = [UIScreen mainScreen].bounds;
+    BUSplashAdView *splashView = [[BUSplashAdView alloc] initWithSlotID:@"811077802" frame:frame];
+    splashView.delegate = self;
+    UIWindow *keyWindow = [UIApplication sharedApplication].windows.firstObject;
+    [splashView loadAdData];
+    [keyWindow.rootViewController.view addSubview:splashView];
 //    self.window = [UIWindow new];
 //
 //    RootViewController *VC = [[RootViewController alloc] init];
@@ -24,6 +32,14 @@
 //    [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
+}
+
+- (void)splashAdDidClose:(BUSplashAdView *)splashAd{
+    [splashAd removeFromSuperview];
+}
+
+- (void)splashAd:(BUSplashAdView *)splashAd didFailWithError:(NSError *)error{
+    NSLog(@"load failed %@", error.localizedDescription);
 }
 
 

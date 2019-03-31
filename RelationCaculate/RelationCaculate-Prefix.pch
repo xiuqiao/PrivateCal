@@ -1,0 +1,22 @@
+//
+//  RelationCaculate-Prefix.pch
+//  RelationCaculate
+//
+//  Created by mac on 2019/3/31.
+//  Copyright © 2019 mac. All rights reserved.
+//
+
+#ifndef RelationCaculate_Prefix_pch
+#define RelationCaculate_Prefix_pch
+
+
+#import "Masonry.h"
+// 屏幕高度
+#define SCREEN_HEIGHT         [[UIScreen mainScreen] bounds].size.height
+// 屏幕宽度
+#define SCREEN_WIDTH          [[UIScreen mainScreen] bounds].size.width
+
+
+
+
+#endif /* RelationCaculate_Prefix_pch */

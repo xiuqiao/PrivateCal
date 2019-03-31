@@ -13,6 +13,8 @@
 #import "QBImagePickerController.h"
 #import "LBBImage.h"
 #import "LBBTimeTool.h"
+#import "ImageItemModel.h"
+
 //#import "KxMovieViewController.h"
 
 
@@ -52,6 +54,7 @@ static NSString *headerId = @"LBBHeaderCollectionReusableView";
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    num = 0;
+    self.navigationItem.title = @"我的图片";
     
     self.imagesArr = [[NSMutableArray alloc]init];
     deleteArray = [[NSMutableArray alloc]init];
@@ -87,11 +90,23 @@ static NSString *headerId = @"LBBHeaderCollectionReusableView";
 
     LBBPhotoListCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
     
-    NSString *imagePath = self.imagesArr[indexPath.row];
+    ImageItemModel *mo = self.imagesArr[indexPath.row];
     
-    cell.imageView.image = [UIImage imageWithContentsOfFile:imagePath];
+    cell.imageView.image = [UIImage imageWithContentsOfFile:mo.imagePath];
     
     cell.imageView.userInteractionEnabled = YES;
+    
+    if(isDeleteing){
+        
+        cell.deleteImg.hidden = NO;
+        if(mo.isDeleteSelect){
+            [cell.deleteImg setImage:[UIImage imageNamed:@"playselectYes"]];
+        }else{
+            [cell.deleteImg setImage:[UIImage imageNamed:@"playselectNo"]];
+        }
+    }else{
+        cell.deleteImg.hidden = YES;
+    }
     
     UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPress:)];
     [cell.imageView addGestureRecognizer:longPress];
@@ -153,8 +168,25 @@ static NSString *headerId = @"LBBHeaderCollectionReusableView";
     btn.selected = !btn.selected;
     if(btn.selected){
         isDeleteing = YES;
+        [self.collectionView reloadData];
     }else{
         isDeleteing = NO;
+        //删除文件
+        NSMutableArray *arr = [[NSMutableArray alloc]init];
+        
+        for(ImageItemModel *mo in self.imagesArr){
+             if(mo.isDeleteSelect){
+                [self deleteOnePicture:mo.imagePath];
+            }else{
+                [arr addObject:mo];
+            }
+        }
+        [self.imagesArr removeAllObjects];
+        [self.imagesArr addObjectsFromArray:arr];
+ 
+        
+        [self.collectionView reloadData];
+        
     }
     
 }
@@ -211,7 +243,6 @@ static NSString *headerId = @"LBBHeaderCollectionReusableView";
             }
             
             //从相册选取
-            NSLog(@"跳转到选择照片界面");
             QBimagePickerController = [[QBImagePickerController alloc] init];
             QBimagePickerController.delegate = self;
             QBimagePickerController.allowsMultipleSelection = YES;
@@ -250,12 +281,7 @@ static NSString *headerId = @"LBBHeaderCollectionReusableView";
 
 - (void)imagePickerController:(QBImagePickerController *)imagePickerController didSelectAsset:(ALAsset *)asset
 {
-    NSLog(@"*** imagePickerController:didSelectAsset:");
-    NSLog(@"%@", asset);
-    
     [self dismissImagePickerController];
-    
-    
 }
 - (void)dismissImagePickerController
 {
@@ -387,7 +413,10 @@ static NSString *headerId = @"LBBHeaderCollectionReusableView";
         
  
         if(imagePath){
-            [self.imagesArr addObject:imagePath];
+            ImageItemModel *model = [[ImageItemModel alloc]init];
+            model.imagePath = imagePath;
+            model.isDeleteSelect = NO;
+            [self.imagesArr addObject:model];
         }
         
         
@@ -431,9 +460,14 @@ static NSString *headerId = @"LBBHeaderCollectionReusableView";
 {
     
     if(isDeleteing){
-        //选择删除图片
-//        deleteArray
         
+        //选择删除图片
+        ImageItemModel *mo = self.imagesArr[indexPath.row];
+        mo.isDeleteSelect = !mo.isDeleteSelect;
+        [self.collectionView reloadItemsAtIndexPaths:@[indexPath]];
+        
+        
+//        [self.collectionView reloadData];
         
     }else{
     //1.创建JLPhoto数组
@@ -446,7 +480,8 @@ static NSString *headerId = @"LBBHeaderCollectionReusableView";
         
         UIImageView *child = [[UIImageView alloc]initWithFrame:CGRectMake((i%4)*width, (i/4)*(width+10), 80, 80)];
         
-        UIImage *image = [UIImage imageWithContentsOfFile:self.imagesArr[i]];
+        ImageItemModel *mo = self.imagesArr[i];
+        UIImage *image = [UIImage imageWithContentsOfFile:mo.imagePath];
         child.image = image;
         
         JLPhoto *photo = [[JLPhoto alloc] init];

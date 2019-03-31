@@ -39,6 +39,7 @@
             </constraints>
             <size key="customSize" width="81" height="74"/>
             <connections>
+                <outlet property="deleteImg" destination="PWe-RA-A2s" id="ahq-l4-Djo"/>
                 <outlet property="imageView" destination="4Xq-Xa-rTj" id="mwx-0K-GKJ"/>
             </connections>
             <point key="canvasLocation" x="40" y="39.580209895052477"/>

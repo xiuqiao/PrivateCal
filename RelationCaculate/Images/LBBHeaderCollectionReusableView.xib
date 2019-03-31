@@ -15,9 +15,9 @@
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zle-TC-cRM">
-                    <rect key="frame" x="0.0" y="0.0" width="116" height="50"/>
+                    <rect key="frame" x="10" y="0.0" width="58" height="50"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <state key="normal" title="    从相册选取图片">
+                    <state key="normal" title="选取图片">
                         <color key="titleColor" red="0.98431372549999996" green="0.71372549019999998" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
@@ -38,7 +38,7 @@
                 <constraint firstItem="Zle-TC-cRM" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Sqj-8w-OKm"/>
                 <constraint firstItem="1rK-as-IPp" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="m0S-PR-8V2"/>
                 <constraint firstAttribute="trailing" secondItem="1rK-as-IPp" secondAttribute="trailing" constant="10" id="tOE-O4-I0X"/>
-                <constraint firstItem="Zle-TC-cRM" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="xdy-PV-hbb"/>
+                <constraint firstItem="Zle-TC-cRM" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="xdy-PV-hbb"/>
             </constraints>
             <connections>
                 <outlet property="addPhotoButton" destination="Zle-TC-cRM" id="Sg2-R6-1Ap"/>

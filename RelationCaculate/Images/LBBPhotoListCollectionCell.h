@@ -11,5 +11,6 @@
 @interface LBBPhotoListCollectionCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *deleteImg;
 
 @end

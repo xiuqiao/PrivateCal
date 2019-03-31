@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LBBRootViewController.h"
 
-@interface LBBPhotoListVC : UIViewController
+@interface LBBPhotoListVC : LBBRootViewController
 
 
 

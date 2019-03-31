@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04622D1A2250BB520007A00B /* navBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 04622D192250BB520007A00B /* navBg.png */; };
+		04622D202250BBCF0007A00B /* LBBRootViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 04622D1C2250BBCF0007A00B /* LBBRootViewController2.m */; };
+		04622D212250BBCF0007A00B /* LBBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04622D1D2250BBCF0007A00B /* LBBRootViewController.m */; };
+		04622D232250BC200007A00B /* arrow_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04622D222250BC200007A00B /* arrow_03@2x.png */; };
 		04762DAC225087F1009DB6EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762DAB225087F1009DB6EB /* AppDelegate.m */; };
 		04762DB4225087F2009DB6EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04762DB3225087F2009DB6EB /* Assets.xcassets */; };
 		04762DB7225087F2009DB6EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04762DB5225087F2009DB6EB /* LaunchScreen.storyboard */; };
@@ -56,9 +60,16 @@
 		04762E532250AB9E009DB6EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E4F2250AB9E009DB6EB /* ViewController.m */; };
 		04762E542250AB9E009DB6EB /* CalculateMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E512250AB9E009DB6EB /* CalculateMethod.m */; };
 		04762E552250AB9E009DB6EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04762E522250AB9E009DB6EB /* Main.storyboard */; };
+		04762E582250B1B0009DB6EB /* ImageItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E572250B1B0009DB6EB /* ImageItemModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04622D192250BB520007A00B /* navBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navBg.png; sourceTree = "<group>"; };
+		04622D1C2250BBCF0007A00B /* LBBRootViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBRootViewController2.m; sourceTree = "<group>"; };
+		04622D1D2250BBCF0007A00B /* LBBRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBRootViewController.m; sourceTree = "<group>"; };
+		04622D1E2250BBCF0007A00B /* LBBRootViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBRootViewController2.h; sourceTree = "<group>"; };
+		04622D1F2250BBCF0007A00B /* LBBRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBRootViewController.h; sourceTree = "<group>"; };
+		04622D222250BC200007A00B /* arrow_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_03@2x.png"; sourceTree = "<group>"; };
 		04762DA7225087F1009DB6EB /* RelationCaculate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelationCaculate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04762DAA225087F1009DB6EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04762DAB225087F1009DB6EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -156,6 +167,8 @@
 		04762E502250AB9E009DB6EB /* CalculateMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateMethod.h; sourceTree = "<group>"; };
 		04762E512250AB9E009DB6EB /* CalculateMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateMethod.m; sourceTree = "<group>"; };
 		04762E522250AB9E009DB6EB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		04762E562250B1B0009DB6EB /* ImageItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageItemModel.h; sourceTree = "<group>"; };
+		04762E572250B1B0009DB6EB /* ImageItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageItemModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,9 +182,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04622D1B2250BBBD0007A00B /* RootVC */ = {
+			isa = PBXGroup;
+			children = (
+				04622D1F2250BBCF0007A00B /* LBBRootViewController.h */,
+				04622D1D2250BBCF0007A00B /* LBBRootViewController.m */,
+				04622D1E2250BBCF0007A00B /* LBBRootViewController2.h */,
+				04622D1C2250BBCF0007A00B /* LBBRootViewController2.m */,
+			);
+			path = RootVC;
+			sourceTree = "<group>";
+		};
 		04762D9E225087F1009DB6EB = {
 			isa = PBXGroup;
 			children = (
+				04622D222250BC200007A00B /* arrow_03@2x.png */,
+				04622D192250BB520007A00B /* navBg.png */,
 				04762E4A2250AA70009DB6EB /* playselectNo.png */,
 				04762E492250AA70009DB6EB /* playselectYes.png */,
 				04762DA9225087F1009DB6EB /* RelationCaculate */,
@@ -190,6 +216,7 @@
 		04762DA9225087F1009DB6EB /* RelationCaculate */ = {
 			isa = PBXGroup;
 			children = (
+				04622D1B2250BBBD0007A00B /* RootVC */,
 				04762E4D2250AB8A009DB6EB /* Caculate */,
 				04762DEF2250973E009DB6EB /* Images */,
 				04762DC1225088AF009DB6EB /* Unity */,
@@ -274,6 +301,8 @@
 				04762DF82250976B009DB6EB /* LBBPhotoListVC.h */,
 				04762DF02250976B009DB6EB /* LBBPhotoListVC.m */,
 				04762DF42250976B009DB6EB /* LBBPhotoListVC.xib */,
+				04762E562250B1B0009DB6EB /* ImageItemModel.h */,
+				04762E572250B1B0009DB6EB /* ImageItemModel.m */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -447,6 +476,8 @@
 				04762DB4225087F2009DB6EB /* Assets.xcassets in Resources */,
 				04762E4822509DE8009DB6EB /* SVProgressHUD.bundle in Resources */,
 				04762E552250AB9E009DB6EB /* Main.storyboard in Resources */,
+				04622D232250BC200007A00B /* arrow_03@2x.png in Resources */,
+				04622D1A2250BB520007A00B /* navBg.png in Resources */,
 				04762DFB2250976C009DB6EB /* LBBPhotoListVC.xib in Resources */,
 				04762E4C2250AA71009DB6EB /* playselectNo.png in Resources */,
 				04762DEE22509413009DB6EB /* RootViewController.xib in Resources */,
@@ -462,8 +493,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04622D202250BBCF0007A00B /* LBBRootViewController2.m in Sources */,
 				04762DE0225088C9009DB6EB /* MASConstraintMaker.m in Sources */,
 				04762E1D225097A1009DB6EB /* QBImagePickerThumbnailView.m in Sources */,
+				04762E582250B1B0009DB6EB /* ImageItemModel.m in Sources */,
 				04762E23225097C9009DB6EB /* DMDevceManager.m in Sources */,
 				04762DDE225088C9009DB6EB /* ViewController+MASAdditions.m in Sources */,
 				04762E18225097A1009DB6EB /* QBAssetsCollectionFooterView.m in Sources */,
@@ -492,6 +525,7 @@
 				04762E16225097A1009DB6EB /* QBImagePickerGroupCell.m in Sources */,
 				04762E2E2250983D009DB6EB /* JLPhotoBrowser.m in Sources */,
 				04762DFA2250976C009DB6EB /* LBBHeaderCollectionReusableView.m in Sources */,
+				04622D212250BBCF0007A00B /* LBBRootViewController.m in Sources */,
 				04762E1A225097A1009DB6EB /* QBAssetsCollectionViewController.m in Sources */,
 				04762DDF225088C9009DB6EB /* MASCompositeConstraint.m in Sources */,
 				04762E1F225097A1009DB6EB /* QBAssetsCollectionViewLayout.m in Sources */,

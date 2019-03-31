@@ -23,6 +23,39 @@
 		04762DE6225088C9009DB6EB /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762DDB225088C9009DB6EB /* MASViewAttribute.m */; };
 		04762DED22509413009DB6EB /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762DEB22509413009DB6EB /* RootViewController.m */; };
 		04762DEE22509413009DB6EB /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04762DEC22509413009DB6EB /* RootViewController.xib */; };
+		04762DF92250976C009DB6EB /* LBBPhotoListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762DF02250976B009DB6EB /* LBBPhotoListVC.m */; };
+		04762DFA2250976C009DB6EB /* LBBHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762DF32250976B009DB6EB /* LBBHeaderCollectionReusableView.m */; };
+		04762DFB2250976C009DB6EB /* LBBPhotoListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04762DF42250976B009DB6EB /* LBBPhotoListVC.xib */; };
+		04762DFC2250976C009DB6EB /* LBBHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04762DF52250976B009DB6EB /* LBBHeaderCollectionReusableView.xib */; };
+		04762DFD2250976C009DB6EB /* LBBPhotoListCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762DF62250976B009DB6EB /* LBBPhotoListCollectionCell.m */; };
+		04762DFE2250976C009DB6EB /* LBBPhotoListCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04762DF72250976B009DB6EB /* LBBPhotoListCollectionCell.xib */; };
+		04762E16225097A1009DB6EB /* QBImagePickerGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E01225097A1009DB6EB /* QBImagePickerGroupCell.m */; };
+		04762E17225097A1009DB6EB /* QBAssetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E04225097A1009DB6EB /* QBAssetsCollectionViewCell.m */; };
+		04762E18225097A1009DB6EB /* QBAssetsCollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E06225097A1009DB6EB /* QBAssetsCollectionFooterView.m */; };
+		04762E19225097A1009DB6EB /* QBImagePickerController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04762E08225097A1009DB6EB /* QBImagePickerController.strings */; };
+		04762E1A225097A1009DB6EB /* QBAssetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E0C225097A1009DB6EB /* QBAssetsCollectionViewController.m */; };
+		04762E1B225097A1009DB6EB /* QBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E0E225097A1009DB6EB /* QBImagePickerController.m */; };
+		04762E1C225097A1009DB6EB /* QBAssetsCollectionCheckmarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E10225097A1009DB6EB /* QBAssetsCollectionCheckmarkView.m */; };
+		04762E1D225097A1009DB6EB /* QBImagePickerThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E11225097A1009DB6EB /* QBImagePickerThumbnailView.m */; };
+		04762E1E225097A1009DB6EB /* QBAssetsCollectionOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E13225097A1009DB6EB /* QBAssetsCollectionOverlayView.m */; };
+		04762E1F225097A1009DB6EB /* QBAssetsCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E14225097A1009DB6EB /* QBAssetsCollectionViewLayout.m */; };
+		04762E23225097C9009DB6EB /* DMDevceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E21225097C9009DB6EB /* DMDevceManager.m */; };
+		04762E2D2250983D009DB6EB /* JLPieProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E262250983D009DB6EB /* JLPieProgressView.m */; };
+		04762E2E2250983D009DB6EB /* JLPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E272250983D009DB6EB /* JLPhotoBrowser.m */; };
+		04762E2F2250983D009DB6EB /* JLImageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E282250983D009DB6EB /* JLImageListView.m */; };
+		04762E302250983D009DB6EB /* JLPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E2A2250983D009DB6EB /* JLPhoto.m */; };
+		04762E3422509896009DB6EB /* LBBImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E3322509896009DB6EB /* LBBImage.m */; };
+		04762E38225098ED009DB6EB /* LBBTimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E36225098ED009DB6EB /* LBBTimeTool.m */; };
+		04762E4422509DE8009DB6EB /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E3A22509DE8009DB6EB /* SVRadialGradientLayer.m */; };
+		04762E4522509DE8009DB6EB /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E3D22509DE8009DB6EB /* SVProgressAnimatedView.m */; };
+		04762E4622509DE8009DB6EB /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E4022509DE8009DB6EB /* SVProgressHUD.m */; };
+		04762E4722509DE8009DB6EB /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E4122509DE8009DB6EB /* SVIndefiniteAnimatedView.m */; };
+		04762E4822509DE8009DB6EB /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04762E4222509DE8009DB6EB /* SVProgressHUD.bundle */; };
+		04762E4B2250AA71009DB6EB /* playselectYes.png in Resources */ = {isa = PBXBuildFile; fileRef = 04762E492250AA70009DB6EB /* playselectYes.png */; };
+		04762E4C2250AA71009DB6EB /* playselectNo.png in Resources */ = {isa = PBXBuildFile; fileRef = 04762E4A2250AA70009DB6EB /* playselectNo.png */; };
+		04762E532250AB9E009DB6EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E4F2250AB9E009DB6EB /* ViewController.m */; };
+		04762E542250AB9E009DB6EB /* CalculateMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E512250AB9E009DB6EB /* CalculateMethod.m */; };
+		04762E552250AB9E009DB6EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04762E522250AB9E009DB6EB /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +96,66 @@
 		04762DEA22509413009DB6EB /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		04762DEB22509413009DB6EB /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		04762DEC22509413009DB6EB /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		04762DF02250976B009DB6EB /* LBBPhotoListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBPhotoListVC.m; sourceTree = "<group>"; };
+		04762DF12250976B009DB6EB /* LBBHeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBHeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		04762DF22250976B009DB6EB /* LBBPhotoListCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBPhotoListCollectionCell.h; sourceTree = "<group>"; };
+		04762DF32250976B009DB6EB /* LBBHeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBHeaderCollectionReusableView.m; sourceTree = "<group>"; };
+		04762DF42250976B009DB6EB /* LBBPhotoListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBBPhotoListVC.xib; sourceTree = "<group>"; };
+		04762DF52250976B009DB6EB /* LBBHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBBHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		04762DF62250976B009DB6EB /* LBBPhotoListCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBPhotoListCollectionCell.m; sourceTree = "<group>"; };
+		04762DF72250976B009DB6EB /* LBBPhotoListCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBBPhotoListCollectionCell.xib; sourceTree = "<group>"; };
+		04762DF82250976B009DB6EB /* LBBPhotoListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBPhotoListVC.h; sourceTree = "<group>"; };
+		04762E00225097A1009DB6EB /* QBImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerController.h; sourceTree = "<group>"; };
+		04762E01225097A1009DB6EB /* QBImagePickerGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerGroupCell.m; sourceTree = "<group>"; };
+		04762E02225097A1009DB6EB /* QBImagePickerThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerThumbnailView.h; sourceTree = "<group>"; };
+		04762E03225097A1009DB6EB /* QBAssetsCollectionCheckmarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionCheckmarkView.h; sourceTree = "<group>"; };
+		04762E04225097A1009DB6EB /* QBAssetsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionViewCell.m; sourceTree = "<group>"; };
+		04762E05225097A1009DB6EB /* QBAssetsCollectionOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionOverlayView.h; sourceTree = "<group>"; };
+		04762E06225097A1009DB6EB /* QBAssetsCollectionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionFooterView.m; sourceTree = "<group>"; };
+		04762E09225097A1009DB6EB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/QBImagePickerController.strings; sourceTree = "<group>"; };
+		04762E0A225097A1009DB6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/QBImagePickerController.strings; sourceTree = "<group>"; };
+		04762E0B225097A1009DB6EB /* QBAssetsCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionViewLayout.h; sourceTree = "<group>"; };
+		04762E0C225097A1009DB6EB /* QBAssetsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionViewController.m; sourceTree = "<group>"; };
+		04762E0D225097A1009DB6EB /* QBImagePickerGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerGroupCell.h; sourceTree = "<group>"; };
+		04762E0E225097A1009DB6EB /* QBImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerController.m; sourceTree = "<group>"; };
+		04762E0F225097A1009DB6EB /* QBAssetsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionViewCell.h; sourceTree = "<group>"; };
+		04762E10225097A1009DB6EB /* QBAssetsCollectionCheckmarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionCheckmarkView.m; sourceTree = "<group>"; };
+		04762E11225097A1009DB6EB /* QBImagePickerThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerThumbnailView.m; sourceTree = "<group>"; };
+		04762E12225097A1009DB6EB /* QBAssetsCollectionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionFooterView.h; sourceTree = "<group>"; };
+		04762E13225097A1009DB6EB /* QBAssetsCollectionOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionOverlayView.m; sourceTree = "<group>"; };
+		04762E14225097A1009DB6EB /* QBAssetsCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionViewLayout.m; sourceTree = "<group>"; };
+		04762E15225097A1009DB6EB /* QBAssetsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionViewController.h; sourceTree = "<group>"; };
+		04762E21225097C9009DB6EB /* DMDevceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMDevceManager.m; sourceTree = "<group>"; };
+		04762E22225097C9009DB6EB /* DMDevceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDevceManager.h; sourceTree = "<group>"; };
+		04762E252250983D009DB6EB /* JLPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLPhoto.h; sourceTree = "<group>"; };
+		04762E262250983D009DB6EB /* JLPieProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLPieProgressView.m; sourceTree = "<group>"; };
+		04762E272250983D009DB6EB /* JLPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLPhotoBrowser.m; sourceTree = "<group>"; };
+		04762E282250983D009DB6EB /* JLImageListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLImageListView.m; sourceTree = "<group>"; };
+		04762E292250983D009DB6EB /* JLPieProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLPieProgressView.h; sourceTree = "<group>"; };
+		04762E2A2250983D009DB6EB /* JLPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLPhoto.m; sourceTree = "<group>"; };
+		04762E2B2250983D009DB6EB /* JLPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLPhotoBrowser.h; sourceTree = "<group>"; };
+		04762E2C2250983D009DB6EB /* JLImageListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLImageListView.h; sourceTree = "<group>"; };
+		04762E3222509896009DB6EB /* LBBImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBImage.h; sourceTree = "<group>"; };
+		04762E3322509896009DB6EB /* LBBImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBImage.m; sourceTree = "<group>"; };
+		04762E36225098ED009DB6EB /* LBBTimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBTimeTool.m; sourceTree = "<group>"; };
+		04762E37225098ED009DB6EB /* LBBTimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBTimeTool.h; sourceTree = "<group>"; };
+		04762E3A22509DE8009DB6EB /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		04762E3B22509DE8009DB6EB /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		04762E3C22509DE8009DB6EB /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		04762E3D22509DE8009DB6EB /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		04762E3E22509DE8009DB6EB /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		04762E3F22509DE8009DB6EB /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		04762E4022509DE8009DB6EB /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		04762E4122509DE8009DB6EB /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		04762E4222509DE8009DB6EB /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		04762E4322509DE8009DB6EB /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		04762E492250AA70009DB6EB /* playselectYes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playselectYes.png; sourceTree = "<group>"; };
+		04762E4A2250AA70009DB6EB /* playselectNo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playselectNo.png; sourceTree = "<group>"; };
+		04762E4E2250AB9E009DB6EB /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04762E4F2250AB9E009DB6EB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04762E502250AB9E009DB6EB /* CalculateMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateMethod.h; sourceTree = "<group>"; };
+		04762E512250AB9E009DB6EB /* CalculateMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateMethod.m; sourceTree = "<group>"; };
+		04762E522250AB9E009DB6EB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +172,8 @@
 		04762D9E225087F1009DB6EB = {
 			isa = PBXGroup;
 			children = (
+				04762E4A2250AA70009DB6EB /* playselectNo.png */,
+				04762E492250AA70009DB6EB /* playselectYes.png */,
 				04762DA9225087F1009DB6EB /* RelationCaculate */,
 				04762DA8225087F1009DB6EB /* Products */,
 			);
@@ -95,6 +190,8 @@
 		04762DA9225087F1009DB6EB /* RelationCaculate */ = {
 			isa = PBXGroup;
 			children = (
+				04762E4D2250AB8A009DB6EB /* Caculate */,
+				04762DEF2250973E009DB6EB /* Images */,
 				04762DC1225088AF009DB6EB /* Unity */,
 				04762DC0225088A6009DB6EB /* lib */,
 				04762DAA225087F1009DB6EB /* AppDelegate.h */,
@@ -114,6 +211,9 @@
 		04762DC0225088A6009DB6EB /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				04762E3922509DE8009DB6EB /* SVProgressHUD */,
+				04762E242250983D009DB6EB /* Classes */,
+				04762DFF225097A1009DB6EB /* QBImagePickerController */,
 				04762DC2225088C9009DB6EB /* Masonry */,
 			);
 			path = lib;
@@ -122,6 +222,9 @@
 		04762DC1225088AF009DB6EB /* Unity */ = {
 			isa = PBXGroup;
 			children = (
+				04762E35225098D0009DB6EB /* LBBTimeTool */,
+				04762E3122509887009DB6EB /* LBBImage */,
+				04762E20225097C9009DB6EB /* Device */,
 			);
 			path = Unity;
 			sourceTree = "<group>";
@@ -157,6 +260,127 @@
 				04762DDC225088C9009DB6EB /* Info.plist */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		04762DEF2250973E009DB6EB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				04762DF12250976B009DB6EB /* LBBHeaderCollectionReusableView.h */,
+				04762DF32250976B009DB6EB /* LBBHeaderCollectionReusableView.m */,
+				04762DF52250976B009DB6EB /* LBBHeaderCollectionReusableView.xib */,
+				04762DF22250976B009DB6EB /* LBBPhotoListCollectionCell.h */,
+				04762DF62250976B009DB6EB /* LBBPhotoListCollectionCell.m */,
+				04762DF72250976B009DB6EB /* LBBPhotoListCollectionCell.xib */,
+				04762DF82250976B009DB6EB /* LBBPhotoListVC.h */,
+				04762DF02250976B009DB6EB /* LBBPhotoListVC.m */,
+				04762DF42250976B009DB6EB /* LBBPhotoListVC.xib */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		04762DFF225097A1009DB6EB /* QBImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				04762E00225097A1009DB6EB /* QBImagePickerController.h */,
+				04762E01225097A1009DB6EB /* QBImagePickerGroupCell.m */,
+				04762E02225097A1009DB6EB /* QBImagePickerThumbnailView.h */,
+				04762E03225097A1009DB6EB /* QBAssetsCollectionCheckmarkView.h */,
+				04762E04225097A1009DB6EB /* QBAssetsCollectionViewCell.m */,
+				04762E05225097A1009DB6EB /* QBAssetsCollectionOverlayView.h */,
+				04762E06225097A1009DB6EB /* QBAssetsCollectionFooterView.m */,
+				04762E07225097A1009DB6EB /* Resources */,
+				04762E0B225097A1009DB6EB /* QBAssetsCollectionViewLayout.h */,
+				04762E0C225097A1009DB6EB /* QBAssetsCollectionViewController.m */,
+				04762E0D225097A1009DB6EB /* QBImagePickerGroupCell.h */,
+				04762E0E225097A1009DB6EB /* QBImagePickerController.m */,
+				04762E0F225097A1009DB6EB /* QBAssetsCollectionViewCell.h */,
+				04762E10225097A1009DB6EB /* QBAssetsCollectionCheckmarkView.m */,
+				04762E11225097A1009DB6EB /* QBImagePickerThumbnailView.m */,
+				04762E12225097A1009DB6EB /* QBAssetsCollectionFooterView.h */,
+				04762E13225097A1009DB6EB /* QBAssetsCollectionOverlayView.m */,
+				04762E14225097A1009DB6EB /* QBAssetsCollectionViewLayout.m */,
+				04762E15225097A1009DB6EB /* QBAssetsCollectionViewController.h */,
+			);
+			path = QBImagePickerController;
+			sourceTree = "<group>";
+		};
+		04762E07225097A1009DB6EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04762E08225097A1009DB6EB /* QBImagePickerController.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04762E20225097C9009DB6EB /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				04762E21225097C9009DB6EB /* DMDevceManager.m */,
+				04762E22225097C9009DB6EB /* DMDevceManager.h */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		04762E242250983D009DB6EB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04762E252250983D009DB6EB /* JLPhoto.h */,
+				04762E262250983D009DB6EB /* JLPieProgressView.m */,
+				04762E272250983D009DB6EB /* JLPhotoBrowser.m */,
+				04762E282250983D009DB6EB /* JLImageListView.m */,
+				04762E292250983D009DB6EB /* JLPieProgressView.h */,
+				04762E2A2250983D009DB6EB /* JLPhoto.m */,
+				04762E2B2250983D009DB6EB /* JLPhotoBrowser.h */,
+				04762E2C2250983D009DB6EB /* JLImageListView.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		04762E3122509887009DB6EB /* LBBImage */ = {
+			isa = PBXGroup;
+			children = (
+				04762E3222509896009DB6EB /* LBBImage.h */,
+				04762E3322509896009DB6EB /* LBBImage.m */,
+			);
+			path = LBBImage;
+			sourceTree = "<group>";
+		};
+		04762E35225098D0009DB6EB /* LBBTimeTool */ = {
+			isa = PBXGroup;
+			children = (
+				04762E37225098ED009DB6EB /* LBBTimeTool.h */,
+				04762E36225098ED009DB6EB /* LBBTimeTool.m */,
+			);
+			path = LBBTimeTool;
+			sourceTree = "<group>";
+		};
+		04762E3922509DE8009DB6EB /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				04762E3A22509DE8009DB6EB /* SVRadialGradientLayer.m */,
+				04762E3B22509DE8009DB6EB /* SVIndefiniteAnimatedView.h */,
+				04762E3C22509DE8009DB6EB /* SVProgressHUD.h */,
+				04762E3D22509DE8009DB6EB /* SVProgressAnimatedView.m */,
+				04762E3E22509DE8009DB6EB /* SVProgressHUD-Prefix.pch */,
+				04762E3F22509DE8009DB6EB /* SVRadialGradientLayer.h */,
+				04762E4022509DE8009DB6EB /* SVProgressHUD.m */,
+				04762E4122509DE8009DB6EB /* SVIndefiniteAnimatedView.m */,
+				04762E4222509DE8009DB6EB /* SVProgressHUD.bundle */,
+				04762E4322509DE8009DB6EB /* SVProgressAnimatedView.h */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		04762E4D2250AB8A009DB6EB /* Caculate */ = {
+			isa = PBXGroup;
+			children = (
+				04762E502250AB9E009DB6EB /* CalculateMethod.h */,
+				04762E512250AB9E009DB6EB /* CalculateMethod.m */,
+				04762E522250AB9E009DB6EB /* Main.storyboard */,
+				04762E4E2250AB9E009DB6EB /* ViewController.h */,
+				04762E4F2250AB9E009DB6EB /* ViewController.m */,
+			);
+			path = Caculate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +424,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 04762D9E225087F1009DB6EB;
 			productRefGroup = 04762DA8225087F1009DB6EB /* Products */;
@@ -216,9 +441,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04762E4B2250AA71009DB6EB /* playselectYes.png in Resources */,
 				04762DB7225087F2009DB6EB /* LaunchScreen.storyboard in Resources */,
+				04762DFC2250976C009DB6EB /* LBBHeaderCollectionReusableView.xib in Resources */,
 				04762DB4225087F2009DB6EB /* Assets.xcassets in Resources */,
+				04762E4822509DE8009DB6EB /* SVProgressHUD.bundle in Resources */,
+				04762E552250AB9E009DB6EB /* Main.storyboard in Resources */,
+				04762DFB2250976C009DB6EB /* LBBPhotoListVC.xib in Resources */,
+				04762E4C2250AA71009DB6EB /* playselectNo.png in Resources */,
 				04762DEE22509413009DB6EB /* RootViewController.xib in Resources */,
+				04762E19225097A1009DB6EB /* QBImagePickerController.strings in Resources */,
+				04762DFE2250976C009DB6EB /* LBBPhotoListCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,15 +463,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				04762DE0225088C9009DB6EB /* MASConstraintMaker.m in Sources */,
+				04762E1D225097A1009DB6EB /* QBImagePickerThumbnailView.m in Sources */,
+				04762E23225097C9009DB6EB /* DMDevceManager.m in Sources */,
 				04762DDE225088C9009DB6EB /* ViewController+MASAdditions.m in Sources */,
+				04762E18225097A1009DB6EB /* QBAssetsCollectionFooterView.m in Sources */,
+				04762E542250AB9E009DB6EB /* CalculateMethod.m in Sources */,
+				04762E38225098ED009DB6EB /* LBBTimeTool.m in Sources */,
+				04762DF92250976C009DB6EB /* LBBPhotoListVC.m in Sources */,
 				04762DE5225088C9009DB6EB /* MASViewConstraint.m in Sources */,
 				04762DBA225087F2009DB6EB /* main.m in Sources */,
+				04762E4522509DE8009DB6EB /* SVProgressAnimatedView.m in Sources */,
 				04762DE1225088C9009DB6EB /* MASLayoutConstraint.m in Sources */,
+				04762E4722509DE8009DB6EB /* SVIndefiniteAnimatedView.m in Sources */,
+				04762E4422509DE8009DB6EB /* SVRadialGradientLayer.m in Sources */,
 				04762DE4225088C9009DB6EB /* MASConstraint.m in Sources */,
+				04762E1E225097A1009DB6EB /* QBAssetsCollectionOverlayView.m in Sources */,
+				04762E2F2250983D009DB6EB /* JLImageListView.m in Sources */,
+				04762E1B225097A1009DB6EB /* QBImagePickerController.m in Sources */,
 				04762DE2225088C9009DB6EB /* NSArray+MASAdditions.m in Sources */,
+				04762E532250AB9E009DB6EB /* ViewController.m in Sources */,
+				04762E4622509DE8009DB6EB /* SVProgressHUD.m in Sources */,
+				04762E17225097A1009DB6EB /* QBAssetsCollectionViewCell.m in Sources */,
+				04762E3422509896009DB6EB /* LBBImage.m in Sources */,
+				04762E2D2250983D009DB6EB /* JLPieProgressView.m in Sources */,
 				04762DAC225087F1009DB6EB /* AppDelegate.m in Sources */,
+				04762E1C225097A1009DB6EB /* QBAssetsCollectionCheckmarkView.m in Sources */,
+				04762DFD2250976C009DB6EB /* LBBPhotoListCollectionCell.m in Sources */,
+				04762E16225097A1009DB6EB /* QBImagePickerGroupCell.m in Sources */,
+				04762E2E2250983D009DB6EB /* JLPhotoBrowser.m in Sources */,
+				04762DFA2250976C009DB6EB /* LBBHeaderCollectionReusableView.m in Sources */,
+				04762E1A225097A1009DB6EB /* QBAssetsCollectionViewController.m in Sources */,
 				04762DDF225088C9009DB6EB /* MASCompositeConstraint.m in Sources */,
+				04762E1F225097A1009DB6EB /* QBAssetsCollectionViewLayout.m in Sources */,
 				04762DE3225088C9009DB6EB /* View+MASAdditions.m in Sources */,
+				04762E302250983D009DB6EB /* JLPhoto.m in Sources */,
 				04762DED22509413009DB6EB /* RootViewController.m in Sources */,
 				04762DDD225088C9009DB6EB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				04762DE6225088C9009DB6EB /* MASViewAttribute.m in Sources */,
@@ -254,6 +512,15 @@
 				04762DB6225087F2009DB6EB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04762E08225097A1009DB6EB /* QBImagePickerController.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04762E09225097A1009DB6EB /* ja */,
+				04762E0A225097A1009DB6EB /* en */,
+			);
+			name = QBImagePickerController.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

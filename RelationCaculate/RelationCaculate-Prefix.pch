@@ -11,6 +11,8 @@
 
 
 #import "Masonry.h"
+#import "SVProgressHUD.h"
+
 // 屏幕高度
 #define SCREEN_HEIGHT         [[UIScreen mainScreen] bounds].size.height
 // 屏幕宽度

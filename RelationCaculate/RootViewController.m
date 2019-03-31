@@ -7,6 +7,7 @@
 //
 
 #import "RootViewController.h"
+#import "LBBPhotoListVC.h"
 
 @interface RootViewController ()
 
@@ -16,9 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    NSLog(@"fafda");
+    UIButton *Btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    Btn.center = self.view.center;
+    [Btn addTarget:self action:@selector(nextPage) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:Btn];
+    
+
 }
 
+
+- (void)nextPage{
+    LBBPhotoListVC *vc = [[LBBPhotoListVC alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+    
+}
 /*
 #pragma mark - Navigation
 

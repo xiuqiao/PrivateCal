@@ -61,6 +61,7 @@
 		04762E542250AB9E009DB6EB /* CalculateMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E512250AB9E009DB6EB /* CalculateMethod.m */; };
 		04762E552250AB9E009DB6EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04762E522250AB9E009DB6EB /* Main.storyboard */; };
 		04762E582250B1B0009DB6EB /* ImageItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762E572250B1B0009DB6EB /* ImageItemModel.m */; };
+		AFA7231EFD969CF4D80F09E8 /* libPods-RelationCaculate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8595B4F4127674C959E68C07 /* libPods-RelationCaculate.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -169,6 +170,9 @@
 		04762E522250AB9E009DB6EB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		04762E562250B1B0009DB6EB /* ImageItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageItemModel.h; sourceTree = "<group>"; };
 		04762E572250B1B0009DB6EB /* ImageItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageItemModel.m; sourceTree = "<group>"; };
+		253B6B94483031DD2358F16C /* Pods-RelationCaculate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelationCaculate.release.xcconfig"; path = "Pods/Target Support Files/Pods-RelationCaculate/Pods-RelationCaculate.release.xcconfig"; sourceTree = "<group>"; };
+		8595B4F4127674C959E68C07 /* libPods-RelationCaculate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RelationCaculate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AD571ED7B5FC0917C625FB /* Pods-RelationCaculate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelationCaculate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RelationCaculate/Pods-RelationCaculate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA7231EFD969CF4D80F09E8 /* libPods-RelationCaculate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +207,8 @@
 				04762E492250AA70009DB6EB /* playselectYes.png */,
 				04762DA9225087F1009DB6EB /* RelationCaculate */,
 				04762DA8225087F1009DB6EB /* Products */,
+				F4FC1173DBA0C47A7A454E3C /* Pods */,
+				16FD1C194EB233D714F66F68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -412,6 +419,23 @@
 			path = Caculate;
 			sourceTree = "<group>";
 		};
+		16FD1C194EB233D714F66F68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8595B4F4127674C959E68C07 /* libPods-RelationCaculate.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4FC1173DBA0C47A7A454E3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6AD571ED7B5FC0917C625FB /* Pods-RelationCaculate.debug.xcconfig */,
+				253B6B94483031DD2358F16C /* Pods-RelationCaculate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -419,9 +443,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04762DBD225087F2009DB6EB /* Build configuration list for PBXNativeTarget "RelationCaculate" */;
 			buildPhases = (
+				70C8CC53B9A0CC39443C0668 /* [CP] Check Pods Manifest.lock */,
 				04762DA3225087F1009DB6EB /* Sources */,
 				04762DA4225087F1009DB6EB /* Frameworks */,
 				04762DA5225087F1009DB6EB /* Resources */,
+				4F4CA60DF5881CCD656FEFB7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -487,6 +513,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F4CA60DF5881CCD656FEFB7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RelationCaculate/Pods-RelationCaculate-resources.sh",
+				"${PODS_ROOT}/Bytedance-UnionAD/Bytedance-UnionAd/Frameworks/BUAdSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RelationCaculate/Pods-RelationCaculate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70C8CC53B9A0CC39443C0668 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RelationCaculate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04762DA3225087F1009DB6EB /* Sources */ = {
@@ -674,6 +747,7 @@
 		};
 		04762DBE225087F2009DB6EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6AD571ED7B5FC0917C625FB /* Pods-RelationCaculate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -694,6 +768,7 @@
 		};
 		04762DBF225087F2009DB6EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253B6B94483031DD2358F16C /* Pods-RelationCaculate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

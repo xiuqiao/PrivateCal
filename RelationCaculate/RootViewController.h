@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RootViewController.h
 //  RelationCaculate
 //
 //  Created by mac on 2019/3/31.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface RootViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

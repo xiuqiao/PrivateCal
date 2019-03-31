@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04762DAC225087F1009DB6EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762DAB225087F1009DB6EB /* AppDelegate.m */; };
-		04762DAF225087F1009DB6EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762DAE225087F1009DB6EB /* ViewController.m */; };
-		04762DB2225087F1009DB6EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04762DB0225087F1009DB6EB /* Main.storyboard */; };
 		04762DB4225087F2009DB6EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04762DB3225087F2009DB6EB /* Assets.xcassets */; };
 		04762DB7225087F2009DB6EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04762DB5225087F2009DB6EB /* LaunchScreen.storyboard */; };
 		04762DBA225087F2009DB6EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762DB9225087F2009DB6EB /* main.m */; };
@@ -23,15 +21,14 @@
 		04762DE4225088C9009DB6EB /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762DD8225088C9009DB6EB /* MASConstraint.m */; };
 		04762DE5225088C9009DB6EB /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762DDA225088C9009DB6EB /* MASViewConstraint.m */; };
 		04762DE6225088C9009DB6EB /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762DDB225088C9009DB6EB /* MASViewAttribute.m */; };
+		04762DED22509413009DB6EB /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04762DEB22509413009DB6EB /* RootViewController.m */; };
+		04762DEE22509413009DB6EB /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04762DEC22509413009DB6EB /* RootViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04762DA7225087F1009DB6EB /* RelationCaculate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelationCaculate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04762DAA225087F1009DB6EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04762DAB225087F1009DB6EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		04762DAD225087F1009DB6EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		04762DAE225087F1009DB6EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		04762DB1225087F1009DB6EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04762DB3225087F2009DB6EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04762DB6225087F2009DB6EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04762DB8225087F2009DB6EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +60,9 @@
 		04762DDB225088C9009DB6EB /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
 		04762DDC225088C9009DB6EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04762DE9225089B3009DB6EB /* RelationCaculate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RelationCaculate-Prefix.pch"; sourceTree = "<group>"; };
+		04762DEA22509413009DB6EB /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		04762DEB22509413009DB6EB /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		04762DEC22509413009DB6EB /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +99,9 @@
 				04762DC0225088A6009DB6EB /* lib */,
 				04762DAA225087F1009DB6EB /* AppDelegate.h */,
 				04762DAB225087F1009DB6EB /* AppDelegate.m */,
-				04762DAD225087F1009DB6EB /* ViewController.h */,
-				04762DAE225087F1009DB6EB /* ViewController.m */,
-				04762DB0225087F1009DB6EB /* Main.storyboard */,
+				04762DEA22509413009DB6EB /* RootViewController.h */,
+				04762DEB22509413009DB6EB /* RootViewController.m */,
+				04762DEC22509413009DB6EB /* RootViewController.xib */,
 				04762DB3225087F2009DB6EB /* Assets.xcassets */,
 				04762DB5225087F2009DB6EB /* LaunchScreen.storyboard */,
 				04762DB8225087F2009DB6EB /* Info.plist */,
@@ -218,7 +218,7 @@
 			files = (
 				04762DB7225087F2009DB6EB /* LaunchScreen.storyboard in Resources */,
 				04762DB4225087F2009DB6EB /* Assets.xcassets in Resources */,
-				04762DB2225087F1009DB6EB /* Main.storyboard in Resources */,
+				04762DEE22509413009DB6EB /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04762DE0225088C9009DB6EB /* MASConstraintMaker.m in Sources */,
-				04762DAF225087F1009DB6EB /* ViewController.m in Sources */,
 				04762DDE225088C9009DB6EB /* ViewController+MASAdditions.m in Sources */,
 				04762DE5225088C9009DB6EB /* MASViewConstraint.m in Sources */,
 				04762DBA225087F2009DB6EB /* main.m in Sources */,
@@ -240,6 +239,7 @@
 				04762DAC225087F1009DB6EB /* AppDelegate.m in Sources */,
 				04762DDF225088C9009DB6EB /* MASCompositeConstraint.m in Sources */,
 				04762DE3225088C9009DB6EB /* View+MASAdditions.m in Sources */,
+				04762DED22509413009DB6EB /* RootViewController.m in Sources */,
 				04762DDD225088C9009DB6EB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				04762DE6225088C9009DB6EB /* MASViewAttribute.m in Sources */,
 			);
@@ -248,14 +248,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04762DB0225087F1009DB6EB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04762DB1225087F1009DB6EB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04762DB5225087F2009DB6EB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -387,6 +379,7 @@
 				DEVELOPMENT_TEAM = JDPHHUH8RJ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RelationCaculate/RelationCaculate-Prefix.pch";
 				INFOPLIST_FILE = RelationCaculate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,7 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lebaobei.relation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = DeveloperTestAllProfile190121;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -406,6 +399,7 @@
 				DEVELOPMENT_TEAM = JDPHHUH8RJ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RelationCaculate/RelationCaculate-Prefix.pch";
 				INFOPLIST_FILE = RelationCaculate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -413,7 +407,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lebaobei.relation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = DeveloperTestAllProfile190121;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

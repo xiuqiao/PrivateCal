@@ -28,7 +28,7 @@
 @interface LBBPhotoListVC ()<QBImagePickerControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UIAlertViewDelegate>{
     QBImagePickerController *QBimagePickerController;
 
-    NSString *deletePath;
+    ImageItemModel *deleteModel;
     BOOL isDeleteing;
     NSMutableArray *deleteArray;
     
@@ -123,7 +123,7 @@ static NSString *headerId = @"LBBHeaderCollectionReusableView";
     UIView *View = longPress.view;
     
     if(self.imagesArr.count > View.tag-10000){
-        deletePath = self.imagesArr[View.tag - 10000];
+        deleteModel = self.imagesArr[View.tag - 10000];
     }
     
     
@@ -176,7 +176,7 @@ static NSString *headerId = @"LBBHeaderCollectionReusableView";
         
         for(ImageItemModel *mo in self.imagesArr){
              if(mo.isDeleteSelect){
-                [self deleteOnePicture:mo.imagePath];
+                [self deleteOnePicture:mo];
             }else{
                 [arr addObject:mo];
             }
@@ -210,8 +210,9 @@ static NSString *headerId = @"LBBHeaderCollectionReusableView";
         [self getPicturesFromLocation];
         [self.collectionView reloadData];
     }else if(alertView.tag == 1000 && buttonIndex == 1){
-        [self deleteOnePicture:deletePath];
-        [self.imagesArr removeObject:deletePath];
+        
+        [self deleteOnePicture:deleteModel];
+        [self.imagesArr removeObject:deleteModel];
         [self.collectionView reloadData];
         
     }
@@ -431,13 +432,13 @@ static NSString *headerId = @"LBBHeaderCollectionReusableView";
     
 }
 
-- (void)deleteOnePicture:(NSString *)imagePath{
+- (void)deleteOnePicture:(ImageItemModel *)deleteModel{
 //    NSString *picturesPath = [self getPath:@"image1"];
 //    NSString *imagePath = [picturesPath stringByAppendingPathComponent:imageName];
     NSFileManager *fileManager = [NSFileManager defaultManager];
 
-    if([fileManager fileExistsAtPath:imagePath]){
-        [fileManager removeItemAtPath:imagePath error:nil];
+    if([fileManager fileExistsAtPath:deleteModel.imagePath]){
+        [fileManager removeItemAtPath:deleteModel.imagePath error:nil];
     }
     
 
